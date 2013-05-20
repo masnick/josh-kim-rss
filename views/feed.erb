@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title><%= title %></title>
+ <link href="<%= url %>"/>
+ <updated><%= updated %></updated>
+
+ <% entries.each do |entry| %>
+ <entry>
+   <title><%= entry[:title] %></title>
+   <link href="<%= entry[:url] %>"/>
+   <updated><%= entry[:updated]%></updated>
+   <id><%= entry[:id]%></id>
+   <summary type="html"><%= entry[:summary] %></summary>
+   <content type="html"><%= entry[:content] %></content>
+ </entry>
+ <% end %>
+
+</feed>
