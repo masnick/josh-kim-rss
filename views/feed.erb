@@ -8,7 +8,7 @@
  <% entries.each do |entry| %>
  <entry>
    <title><%= entry[:title] %></title>
-   <link href="<%= entry[:url] %>"/>
+   <link href="<%= entry[:link] %>"/>
    <updated><%= entry[:updated]%></updated>
    <id><%= entry[:id]%></id>
    <summary type="html"><%= entry[:summary] %></summary>
